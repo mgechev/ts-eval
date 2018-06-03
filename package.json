@@ -1,0 +1,37 @@
+{
+  "name": "evaluator",
+  "version": "0.0.0",
+  "description": "Evaluator for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mgechev/evaluator"
+  },
+  "keywords": ["typescript", "evaluator", "interpreter"],
+  "author": "Minko Gechev <mgechev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "@types/vue-router": "^2.0.0",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6"
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": ["**/__tests__/*.+(ts|tsx|js)"]
+  }
+}
