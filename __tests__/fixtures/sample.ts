@@ -4,7 +4,7 @@ import { prefix } from './config';
 const suffix = '/suffix';
 const path = prefix + suffix;
 
-const Foo = () => import('/prefix/' + 'lazy');
+const Foo = () => imports('/prefix/' + 'lazy');
 
 new VueRouter({
   routes: [

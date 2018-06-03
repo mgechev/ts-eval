@@ -10,20 +10,31 @@
     "type": "git",
     "url": "github.com/mgechev/evaluator"
   },
-  "keywords": ["typescript", "evaluator", "interpreter"],
+  "keywords": [
+    "typescript",
+    "evaluator",
+    "interpreter"
+  ],
   "author": "Minko Gechev <mgechev@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "prepack": "0.2.34",
     "typescript": "^2.9.1"
   },
   "devDependencies": {
     "@types/jest": "^23.0.0",
     "@types/vue-router": "^2.0.0",
     "jest": "^23.1.0",
+    "rollup": "^0.59.4",
+    "rollup-plugin-hypothetical": "^2.1.0",
     "ts-jest": "^22.4.6"
   },
   "jest": {
-    "moduleFileExtensions": ["ts", "tsx", "js"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"
     },
@@ -32,6 +43,8 @@
         "tsConfigFile": "tsconfig.json"
       }
     },
-    "testMatch": ["**/__tests__/*.+(ts|tsx|js)"]
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ]
   }
 }
